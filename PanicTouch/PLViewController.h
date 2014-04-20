@@ -9,5 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface PLViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *iPhoneTimerLabel;
+@property (strong, nonatomic) IBOutlet UILabel *iPadTimerLabel;
+@property (nonatomic, strong) NSTimer *ticker;
+@property (nonatomic) int newTime;
+
+
+-(IBAction)iPadStartTimerButton:(UIButton *)sender;
+-(IBAction)iPhoneStartTimerButton:(UIButton *)sender;
+-(IBAction)startTimerForIPHONE;
+-(void)showActivityForIPHONE;
+
+
 
 @end
